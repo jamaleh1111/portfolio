@@ -30,6 +30,13 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid $border;
+  background-color: $highlight;
+}
+
 /**************
 header
 **************/
@@ -394,6 +401,22 @@ pagination
 #share_box i:hover {
   color: #8bc6db;
   cursor: pointer;
+}
+
+#admin_links {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0;
+  a {
+    color: $light;
+    margin: 0 1em;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
 
 .project_button {

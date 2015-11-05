@@ -7,6 +7,11 @@
       <hr>
     </div>
   <% end %>
+  <% if user_signed_in? %>
+    <div id= "admin_links">
+      <%= link_to "New", new_post_path(@post) %>
+    </div>
+  <% end %>
 </div>
 <%= will_paginate @posts %>
   <!-- <div class="pagination">
