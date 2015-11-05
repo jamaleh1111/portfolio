@@ -339,3 +339,36 @@ pagination
   color: #c0c0c0;
   background: #fff;
 }
+
+/**************
+contact form
+**************/
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 1em;
+  border: 2px solid #e9e9e9;
+  padding: 1em;
+  margin: .5em 0 2em 0;
+}
+
+input[type="submit"], .button {
+  outline: none;
+  background: transparent;
+  border: 2px solid #e9e9e9;
+  text-align: center;
+  font-size: 1em;
+  color: #424652;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+input[type="submit"]:hover, input[type="submit"]:hover {
+  border: 2px solid #8bc6db;
+  color: #8bc6db;
+}
+
+textarea {
+  min-height: 20em;
+}
