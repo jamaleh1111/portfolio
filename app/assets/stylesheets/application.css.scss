@@ -19,9 +19,16 @@
 /** this doesn't work? {
   box-sixing: border-box;
 }*/
+
+$dark: #424652;
+$white: #FFF;
+$light: #9a9da4;
+$border: #e9e9e9;
+
 body {
   font-family: 'Raleway', sans-serif;
 }
+
 /**************
 header
 **************/
@@ -36,7 +43,7 @@ header
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
-  color: #424652;
+  color: $dark;
 }
 
 h1 {
@@ -248,8 +255,8 @@ blog index
 #page_title {
   text-align: center;
   border-bottom: 1px solid #E9E9E9;
-  padding: .5em 0;
-  font-size: 1rem
+  padding: 2em 0;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 

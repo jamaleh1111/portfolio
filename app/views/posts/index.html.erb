@@ -1,25 +1,13 @@
 <h1 id="page_title">Blog</h1>
 <div id="posts_wrapper" class="skinny_wrapper">
   <div class="post">
-    <h2><a href="#">Title 1</a></h2>
-    <p class="date">date</p>
+    <% @posts.each do |post| %>
+    <h3><a href="#"><%= link_to @post.title, post %></a></h3>
+    <p class="date"><%= @post.create_at.strftime("%A, %b, %d") %></p>
+    <% end %>
     <hr>
   </div>
-  <div class="post">
-    <h2><a href="#">Title 2</a></h2>
-    <p class="date">date</p>
-    <hr>
-  </div>
-  <div class="post">
-    <h2><a href="#">Title 3</a></h2>
-    <p class="date">date</p>
-    <hr>
-  </div>
-  <div class="post">
-    <h2><a href="#">Title 4</a></h2>
-    <p class="date">date</p>
-    <hr>
-  </div>
+
 </div>
 
   <div class="pagination">
