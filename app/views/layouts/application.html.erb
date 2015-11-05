@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <title>Jamaleh Gyulay - Rails WebDev</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,900,700,100' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-
+<header id="main_navigation" class="clearfix">
+  <a href="#" class="name">Jamaleh Gyulay</a>
+  <nav>
+    <a href="#">Projects</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 <%= yield %>
-
+<footer id="main_footer">
+  <nav>
+    <p class="copyright">&copy;2015 Jamaleh Gyulay</p>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+  </nav>
+</footer>
 </body>
 </html>
