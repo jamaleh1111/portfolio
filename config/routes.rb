@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :posts, :projects
   resources :contacts, only: [:new, :create]
   root 'welcome#index'
+  get '*path' => redirect('/')
 
 
   # The priority is based upon order of creation: first created -> highest priority.
