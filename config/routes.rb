@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'welcome/about'
 
-  resources :posts
+  resources :posts, :projects
   root 'welcome#index'
 
 
