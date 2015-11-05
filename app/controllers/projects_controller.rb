@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
   before_action :find_projects, only: [:show, :edit, :update, :destroy]
   def index
-    @projects = Project.all
+    @projects = Project.all.order("created_at desc")
   end
 
   def show

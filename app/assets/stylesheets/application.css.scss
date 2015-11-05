@@ -24,6 +24,7 @@ $dark: #424652;
 $white: #FFF;
 $light: #9a9da4;
 $border: #e9e9e9;
+$highlight: #8bc6db;
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -352,7 +353,7 @@ pagination
 }
 
 /**************
- blog show
+ blog and project show
 **************/
 
 #post_show_content  header {
@@ -389,6 +390,18 @@ pagination
 #share_box i:hover {
   color: #8bc6db;
   cursor: pointer;
+}
+
+.project_button {
+  background: $highlight;
+  color: $white;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center;
 }
 
 /**************
