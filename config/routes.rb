@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'contact' => 'welcome#contact'
 
   get 'welcome/about'
 
   resources :posts, :projects
+  resources :contacts, only: [:new, :create]
   root 'welcome#index'
 
 
