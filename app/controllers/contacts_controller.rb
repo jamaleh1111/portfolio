@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
 
-  def created
+  def create
     @contact = Contact.new(params[:id])
     @contact.request = request
     if @contact.deliver
