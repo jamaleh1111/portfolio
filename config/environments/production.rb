@@ -78,10 +78,9 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { host: 'https://jamalehgyulay.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries =  true
-  config.raise_delivery_errors = true
-  
-  ActionMailer::Base.delivery_method = :smtp
+  # config.action_mailer.perform_deliveries =  true
+  # config.raise_delivery_errors = true
+
   ActionMailer::Base.smtp_settings = {
    :address        => 'smtp.sendgrid.net',
    :port           => '587',
