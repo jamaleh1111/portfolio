@@ -234,6 +234,7 @@ footer
   margin-left: 1em;
   margin-bottom: 2em;
   padding-top: .2em;
+  float: none;
 }
 
 #main_footer nav a {
@@ -245,19 +246,13 @@ footer
   font-size: 2em;
 }
 
-/*
-#main_footer nav i {
-  color: #424652;
-  margin-left: 1em;
-  padding-top: .2em;
-}*/
-
 #main_footer nav i:hover {
   color: #8bc6db;
 }
 
 footer nav {
   padding: 0;
+  margin-right: 17px;
 }
 
 /**************

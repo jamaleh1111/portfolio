@@ -9,31 +9,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-<header id="main_navigation" class="clearfix">
-  <%= link_to "Jamaleh Gyulay", root_path, class: "name" %>
-  <nav>
-    <%= link_to "Blog", posts_path %>
-    <%= link_to "Projects", projects_path %>
-    <%= link_to "Contact", new_contact_path %>
-    <% if user_signed_in? %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-    <% end %>
-  </nav>
-</header>
-<% if notice %>
-  <p class="notice"><%= notice %></p>
-<% elsif alert %>
-  <p class="alert"><%= alert %></p>
-<% end %>
+  <header id="main_navigation" class="clearfix">
+    <%= link_to "Jamaleh Gyulay", root_path, class: "name" %>
+    <nav>
+      <%= link_to "Blog", posts_path %>
+      <%= link_to "Projects", projects_path %>
+      <%= link_to "Contact", new_contact_path %>
+      <% if user_signed_in? %>
+        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+      <% end %>
+    </nav>
+  </header>
+  <% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% elsif alert %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
 
-<%= yield %>
-<footer id="main_footer">
-  <nav>
+  <%= yield %>
+  <footer id="main_footer">
     <p class="copyright">&copy;2015 Jamaleh Gyulay</p>
-    <a href="https://twitter.com/jamalehg" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a href="https://github.com/jamaleh1111" target="_blank"><i class="fa fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/jamalehgyulay" target="_blank"><i class="fa fa-linkedin"></i></a>
-  </nav>
-</footer>
+    <nav>
+      <a href="https://twitter.com/jamalehg" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/jamaleh1111" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jamalehgyulay" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </nav>
+  </footer>
 </body>
 </html>
