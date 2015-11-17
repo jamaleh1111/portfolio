@@ -3,13 +3,14 @@
 <head>
   <title>Jamaleh Gyulay - Rails WebDev</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,900,700,100' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header id="main_navigation" class="clearfix">
+  <header>
     <%= link_to "Jamaleh Gyulay", root_path, class: "name" %>
     <nav>
       <%= link_to "Blog", posts_path %>
@@ -27,8 +28,8 @@
   <% end %>
 
   <%= yield %>
-  <footer id="main_footer">
-    <p class="copyright">&copy;2015 Jamaleh Gyulay</p>
+  <footer>
+    <p >&copy;2015 Jamaleh Gyulay</p>
     <nav>
       <a href="https://twitter.com/jamalehg" target="_blank"><i class="fa fa-twitter"></i></a>
       <a href="https://github.com/jamaleh1111" target="_blank"><i class="fa fa-github"></i></a>

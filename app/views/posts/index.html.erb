@@ -1,14 +1,14 @@
-<h1 id="page_title">Blog</h1>
-<div id="posts_wrapper" class="skinny_wrapper">
+<h1>Blog</h1>
+<div>
   <% @posts.each do |post| %>
-    <div class="post">
+    <div>
       <h2><a href="#"><%= link_to post.title, post %></a></h2>
-      <p class="date"><%= post.created_at.strftime("%A, %b, %d") %></p>
+      <p><%= post.created_at.strftime("%A, %b, %d") %></p>
       <hr>
     </div>
   <% end %>
   <% if user_signed_in? %>
-    <div id= "admin_links">
+    <div>
       <%= link_to "New", new_post_path(@post) %>
     </div>
   <% end %>

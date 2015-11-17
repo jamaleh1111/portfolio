@@ -1,15 +1,15 @@
-<h1 id="page_title">My Projects</h1>
-<div id="posts_wrapper" class="skinny_wrapper">
+<h1>My Projects</h1>
+<div>
   <% @projects.each do |project| %>
-    <div class="post">
+    <div>
       <h2><a href="#"><%= link_to project.title, project %></a></h2>
-      <p class="date"><%= project.created_at.strftime("%A, %b, %d") %></p>
+      <p><%= project.created_at.strftime("%A, %b, %d") %></p>
       <hr>
     </div>
   <% end %>
 
   <% if user_signed_in? %>
-    <div id= "admin_links">
+    <div>
       <%= link_to "New", new_project_path(@project) %>
     </div>
   <% end %>
