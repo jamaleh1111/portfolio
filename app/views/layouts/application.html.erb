@@ -10,16 +10,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header>
+  <header id="navigation">
+    <div class="container text-center">
     <%= link_to "Jamaleh Gyulay", root_path, class: "name" %>
-    <nav>
-      <%= link_to "Blog", posts_path %>
-      <%= link_to "Projects", projects_path %>
-      <%= link_to "Contact", new_contact_path %>
-      <% if user_signed_in? %>
-        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-      <% end %>
-    </nav>
+      <nav>
+        <%= link_to "Blog", posts_path %>
+        <%= link_to "Projects", projects_path %>
+        <%= link_to "Contact", new_contact_path %>
+        <% if user_signed_in? %>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+        <% end %>
+      </nav>
+    </div>
   </header>
   <% if notice %>
     <p class="notice"><%= notice %></p>
