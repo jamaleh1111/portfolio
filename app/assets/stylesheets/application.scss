@@ -18,16 +18,69 @@
  @import "bootstrap";
 
 
-h1, h2 {
+
+/***************
+FONTS
+***************/
+h1, h2, h3 {
   font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  margin-top: 1.5em;
 }
 
 p {
   font-family: 'Playfair Display', serif;
   font-size: 1.5em;
 }
-#time {
-  font-size: 1em;
+
+/***************
+COLORS
+***************/
+
+$red: #940C30;
+$background: #FFFAF7;
+$border: #E8E0D1;
+$dark: #424652;
+$light: #9a9da4;
+
+/***************
+GENERAL
+***************/
+
+body {
+  background-color: $background;
+}
+
+hr {
+  width: 25em;
+  height: 5px;
+  border-top: 2px solid $red;
+}
+
+#page-title {
+  text-align: center;
+  border-bottom: 1px solid $dark;
+  padding: 1em 0;
+}
+/***************
+WELCOME INDEX
+***************/
+.row {
+  a {
+    text-decoration: none;
+    color: $dark;
+    &:hover {
+      color: $red;
+    }
+  }
+  p.date {
+    font-size: 1em;
+    color: $light;
+  }
 }
 
 div.share a {

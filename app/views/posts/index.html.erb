@@ -1,16 +1,16 @@
+<h1 id="page-title">Blog</h1>
 <div class="container text-center">
   <div class="row">
-  <h1>Blog</h1>
-  <div class="content">
-    <% @posts.each do |post| %>
-      <div class="col-md-6 col-md-offset-3">
-        <h2><a href="#"><%= link_to post.title, post %></a></h2>
-        <p id="time"><%= post.created_at.strftime("%A, %b, %d") %></p>
-        <hr>
-      </div>
-    <% end %>
+    <div class="content">
+      <% @posts.each do |post| %>
+        <div class="col-md-6 col-md-offset-3">
+          <h2><a href="#"><%= link_to post.title, post %></a></h2>
+          <p class="date"><%= post.created_at.strftime("%A, %b, %d") %></p>
+          <hr>
+        </div>
+      <% end %>
+    </div>
   </div>
-</div>
     <% if user_signed_in? %>
       <div>
         <%= link_to "New", new_post_path(@post) %>

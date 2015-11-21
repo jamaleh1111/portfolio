@@ -1,11 +1,11 @@
+<h1 id="page-title">My Projects</h1>
 <div class="container text-center">
   <div class="row">
-  <h1>My Projects</h1>
     <div class="content">
       <% @projects.each do |project| %>
         <div class="col-md-4">
           <h2><a href="#"><%= link_to project.title, project %></a></h2>
-          <p><%= project.created_at.strftime("%A, %b, %d") %></p>
+          <p class="date"><%= project.created_at.strftime("%A, %b, %d") %></p>
           <hr>
         </div>
       <% end %>
