@@ -1,5 +1,7 @@
-<div>
-  <header>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+  <header class="heading">
     <h1><%= @post.title %></h1>
     <p><%= @post.created_at.strftime("%A, %b, %d") %></p>
     <hr>
@@ -27,3 +29,6 @@
 <hr>
  <%= render 'disqus' %>
 <br>
+</div>
+</div>
+</div>
