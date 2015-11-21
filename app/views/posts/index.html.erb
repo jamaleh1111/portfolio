@@ -5,7 +5,7 @@
     <% @posts.each do |post| %>
       <div class="col-md-6 col-md-offset-3">
         <h2><a href="#"><%= link_to post.title, post %></a></h2>
-        <p><%= post.created_at.strftime("%A, %b, %d") %></p>
+        <p id="time"><%= post.created_at.strftime("%A, %b, %d") %></p>
         <hr>
       </div>
     <% end %>

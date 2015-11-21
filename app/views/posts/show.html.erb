@@ -3,7 +3,7 @@
     <div class="col-md-8 col-md-offset-2">
   <header class="heading">
     <h1><%= @post.title %></h1>
-    <p><%= @post.created_at.strftime("%A, %b, %d") %></p>
+    <p id="time"><%= @post.created_at.strftime("%A, %b, %d") %></p>
     <hr>
   </header>
 
@@ -17,7 +17,7 @@
     </div>
   <% end %>
 <hr>
-  <div>
+  <div class="share">
     <p>Share <br><%= @post.title %></p>
     <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @jamalehg - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
       <i class="fa fa-twitter"></i>
