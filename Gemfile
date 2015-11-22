@@ -59,3 +59,7 @@ group :production do
 end
 
 gem 'bootstrap-sass'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+gem 'figaro', '1.0'
