@@ -7,7 +7,7 @@
     <hr>
   </header>
 
-  <div id="content">
+  <div class="text-left">
     <p><%= markdown @post.content %></p>
   </div>
   <% if user_signed_in? %>
@@ -18,7 +18,8 @@
   <% end %>
 <hr>
   <div class="share">
-    <p>Share <br><%= @post.title %></p>
+    <p>Share</p>
+    <p id="share-post"><%= @post.title %></p>
     <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @jamalehg - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
       <i class="fa fa-twitter"></i>
     </a>

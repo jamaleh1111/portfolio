@@ -67,6 +67,10 @@ hr {
   padding: 1em 0;
 }
 
+.admin {
+  margin-top: 2em;
+}
+
 /***************
 NAV
 ***************/
@@ -126,6 +130,54 @@ div.share a {
   font-size: 1.5em
 }
 
+
+/***************
+PROJECT
+***************/
+
+div.view-button {
+  margin: 4em 0 0 0;
+  a.project-button {
+    background: $red;
+    color: $background;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin: 4em 0 0 0;
+  }
+}
+
+// .button-wrapper {
+//   margin: 4em 0 0 0;
+//   text-align: center;
+// }
+
+/***************
+BLOG
+***************/
+
+#share-post {
+  text-transform: uppercase;
+}
+
 /***************
 FOOTER
 ***************/
+
+footer {
+  text-align: center;
+  border-top: 2px solid $red;
+  margin-top: 5rem;
+  p {
+    margin-top: 2rem;
+  }
+  nav {
+    text-decoration: none;
+    font-size: 2em;
+    i {
+      color: $dark;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
