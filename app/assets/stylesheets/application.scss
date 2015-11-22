@@ -66,6 +66,45 @@ hr {
   border-bottom: 1px solid $dark;
   padding: 1em 0;
 }
+
+/***************
+NAV
+***************/
+
+header#navigation {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 2px solid $red;
+  margin: 3em 0;
+  padding: 2.5em 5%;
+  div.container.text-center {
+    margin-bottom: 1.5em;
+    a.name {
+      text-decoration: none;
+      letter-spacing: 5px;
+      color: $red;
+      font-size: 3em;
+      border: 2px solid $dark;
+      padding: 2rem;
+      margin-bottom: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      font-size: 1.5em;
+      color: $dark;
+      padding-top: 3rem;
+      margin: 0 6rem 0 6rem;
+      &:hover {
+        color: $red;
+      }
+    }
+    nav {
+      margin-top: 5rem;
+    }
+  }
+}
+
+
 /***************
 WELCOME INDEX
 ***************/
@@ -86,3 +125,7 @@ WELCOME INDEX
 div.share a {
   font-size: 1.5em
 }
+
+/***************
+FOOTER
+***************/
