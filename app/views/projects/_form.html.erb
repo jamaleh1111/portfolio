@@ -22,10 +22,18 @@
 
 <%= f.label :link %><br>
 <%= f.text_field :link %>
-<!-- <%= f.label :image %>
-<%= f.file_field :image %>
-<%= f.hidden_field :image_cache %> -->
 
+<br />
+<br />
+<p>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <%= f.hidden_field :image_cache %>
+</p>
+<p>
+  <%= f.check_box :remove_image %>
+  Remove image
+</p>
 <br>
 <br>
 
