@@ -33,9 +33,11 @@ h2 {
 }
 
 p {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
 }
+
+
 
 /***************
 COLORS
@@ -53,6 +55,7 @@ GENERAL
 
 body {
   background-color: $background;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 hr {
@@ -90,7 +93,6 @@ NAV
 ***************/
 
 header#navigation {
-  font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   border-bottom: 2px solid $red;
   margin: 3em 0;
@@ -185,7 +187,6 @@ CONTACT
 
 .new_contact {
   margin-top: 4rem;
-  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
 }
 input[type="text"], input[type="email"], input[type="password"], textarea {
@@ -193,7 +194,6 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   height: 3em;
   margin: .5em 0 2em 0;
   background-color: $border;
-  font-family: 'Playfair Display', serif;
   border: 0;
 }
 
@@ -206,6 +206,10 @@ input[type="submit"] {
   background-color: $red;
   color: $background;
   border: 0;
+}
+
+input#contact_name, input#contact_email, textarea#contact_message {
+  padding: 1rem;
 }
 
 #thank-you {
@@ -238,6 +242,19 @@ footer {
       &:hover {
         color: $red;
       }
+    }
+  }
+}
+
+div.home {
+  text-align: right;
+  padding-right: 4em;
+  text-transform: uppercase;
+  a {
+    color: $dark;
+    &:hover {
+      text-decoration: none;
+      color: $red;
     }
   }
 }

@@ -14,6 +14,9 @@
     <div class="container text-center">
     <%= link_to "Jamaleh Gyulay", root_path, class: "name" %>
       <nav>
+        <h2 class="tagline">A Rails developer ready to create, learn, and deploy <br />
+          remotely or on-site
+    </h2>
         <!-- <%= link_to "Blog", posts_path %>
         <%= link_to "Projects", projects_path %> -->
         <% if user_signed_in? %>
@@ -29,6 +32,9 @@
   <% end %>
 
   <%= yield %>
+  <div class="home">
+    <%= link_to "Home", root_path %>
+  </div>
   <footer>
     <p class="contact"><%= link_to "Contact", new_contact_path %> me or find me on:</p>
 
