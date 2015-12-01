@@ -6,7 +6,6 @@
         <div class="col-md-4">
           <h2><a href="#"><%= link_to project.title, project %></a></h2>
           <p class="date"><%= project.created_at.strftime("%A, %b, %d") %></p>
-          <div class"img-responsive"><%= image_tag(project.image.thumb.url) %></div>
           <hr>
         </div>
       <% end %>

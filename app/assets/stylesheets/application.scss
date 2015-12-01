@@ -145,7 +145,13 @@ div.share a {
   font-size: 1.5em
 }
 
-
+div.view-button a {
+  background: $red;
+  color: $background;
+  text-decoration: none;
+  padding: 1em 2em;
+  margin: 4em 0 0 0;
+}
 /***************
 PROJECT
 ***************/
