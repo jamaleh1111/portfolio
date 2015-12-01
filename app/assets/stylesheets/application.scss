@@ -153,6 +153,7 @@ div.view-button a {
     margin: 4em 0 0 0;
 }
 
+
 /***************
 PROJECT
 ***************/
@@ -219,8 +220,15 @@ footer {
   text-align: center;
   border-top: 2px solid $red;
   margin-top: 5rem;
-  p {
+  p.contact {
     margin-top: 2rem;
+    a {
+      color: $red;
+      &:hover {
+        text-decoration: none;
+        color: $dark;
+      }
+    }
   }
   nav {
     text-decoration: none;

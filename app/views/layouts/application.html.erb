@@ -14,9 +14,8 @@
     <div class="container text-center">
     <%= link_to "Jamaleh Gyulay", root_path, class: "name" %>
       <nav>
-        <%= link_to "Blog", posts_path %>
-        <%= link_to "Projects", projects_path %>
-        <%= link_to "Contact", new_contact_path %>
+        <!-- <%= link_to "Blog", posts_path %>
+        <%= link_to "Projects", projects_path %> -->
         <% if user_signed_in? %>
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
         <% end %>
@@ -31,7 +30,8 @@
 
   <%= yield %>
   <footer>
-    <p >&copy;2015 Jamaleh Gyulay</p>
+    <p class="contact"><%= link_to "Contact", new_contact_path %> me or find me on:</p>
+
     <nav>
       <a href="https://twitter.com/jamalehg" target="_blank"><i class="fa fa-twitter"></i></a>
       <a href="https://github.com/jamaleh1111" target="_blank"><i class="fa fa-github"></i></a>
