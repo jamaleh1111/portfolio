@@ -264,4 +264,14 @@ div.home {
     }
   }
 }
+
+.btn-default {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.glyphicon-home {
+  font-size: 1.5em;
+}
+
 @import 'pygments';

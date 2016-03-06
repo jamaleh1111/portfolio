@@ -33,7 +33,9 @@
 
   <%= yield %>
   <div class="home">
-    <%= link_to "Home", root_path %>
+    <%= link_to root_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-home"></span>
+    <% end %>
   </div>
   <footer>
     <p class="contact"><%= link_to "Contact", new_contact_path %> me or find me on:</p>
